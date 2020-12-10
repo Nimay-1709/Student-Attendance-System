@@ -1,0 +1,166 @@
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#mid-section{
+  margin-top: 10px;
+}
+
+#mid-section h2,h4{
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: #f4f4f4;
+}
+
+th{
+  background-color: #9466ef;
+  color: #ffffff;
+}
+
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table .table-btn{
+  background-color: #9466ef;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 5px;
+  border-radius: 50px 50px;
+}
+
+table .table-btn:hover{
+  background-color: #c0a0ff;
+}
+
+.btn-tab{
+  margin-top: 20px;
+}
+
+.btn-tab td{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Media Compatible */
+@media(max-width: 1050px){
+  table{
+    width: 100%;
+  }
+
+  #mid-section h2{
+    font-size: 25px;
+  }
+
+  #mid-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  header #heading{
+      padding: 0;
+      float: none;
+  }
+
+  header nav{
+    float: none;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  table {
+    border: 0;
+    font-size: 20px;
+  }
+
+  #mid-section{
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+
+  #mid-section h2,h4{
+    font-size: 20px;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .btn-tab td{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  table{
+    font-size: 17px;
+  }
+
+  #mid-section h2,h4{
+    font-size: 19px;
+  }
+}

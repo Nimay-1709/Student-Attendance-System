@@ -1,0 +1,172 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: sans-serif,Arial;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin:auto;
+  overflow:hidden;
+}
+
+/* Head Section */
+header{
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 50px;
+}
+
+header #heading{
+  float: left;
+  padding-left: 60px;
+}
+
+header nav{
+  float: right;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+header li{
+  display: inline;
+  font-weight: bold;
+  padding:0 20px 0 20px;
+}
+
+header a{
+  color: #000000;
+}
+
+header a:hover{
+  color: #f4f4f4;
+}
+
+/* Middle Section */
+#mid-section{
+  margin: 80px;
+}
+
+#mid-section .student-img{
+  text-align: center;
+}
+
+#mid-section .student-img img{
+  width: 350px;
+}
+
+#mid-section .admin-img{
+  float: left;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
+#mid-section .admin-img img{
+  width:350px;
+}
+
+#mid-section .faculty-img{
+  float: right;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+#mid-section .faculty-img img{
+  width:350px;
+}
+
+.icon{
+  width: 31%;
+  height: 31%;
+}
+
+.back-image{
+  overflow: auto;
+  position: relative;
+}
+
+.back-image::before{
+  opacity: 0.9;
+  content: "";
+  position: fixed;
+  left: -5%;
+  right: 0;
+  top: -5%;
+  z-index: -1;
+  display: block;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  width: 110%;
+  height: 110%;
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+.back-image h3{
+  text-align: center;
+}
+
+/* Foot Section */
+#footer{
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.static-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Compatible */
+@media(max-width: 1050px){
+  #mid-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+
+  #mid-section .admin-img,
+  #mid-section .faculty-img,
+  #mid-section .student-img{
+    float:none;
+    text-align:center;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    background-color: #ffffff;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 17px;
+  }
+
+  #footer{
+    font-size: 15px;
+  }
+
+  .media-static-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
